@@ -20,3 +20,18 @@
 #
 # Z drugiej strony, jeśli `goal` to 18, a `chunk` to 2 - wtedy NIE możemy zbudować mostu, a funkcja powinna zwracać
 # wartość `False`.
+
+
+def build_bridge(goal, chunk):
+    if (goal - chunk) % (1.5 * chunk) == 0:
+        return True
+    else:
+        return False
+
+test = [(20, 2), (18, 2), (15, 3), (100, 10)]
+
+for pair in test:
+    goal, chunk = pair
+    print(f"Czy zbuduje się most wielkości goal={goal} z chunk={chunk}? \n"
+          f"Odpowiedź: {build_bridge(goal=goal, chunk=chunk)}.")
+
