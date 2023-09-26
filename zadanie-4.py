@@ -23,3 +23,18 @@
 # ```
 # {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}
 # ```
+
+def lista_rzutow(num):
+    suma_oczek = []
+    for i in range(1, 7):
+        for j in range(1, 7):
+            if i + j == num:
+                suma_oczek.append((i, j))
+    return suma_oczek
+
+
+dice = {num: lista_rzutow(num) for num in range(2, 12)}
+
+for suma, rzuty in dice.items():
+    print(suma, rzuty)
+
