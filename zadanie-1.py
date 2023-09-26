@@ -18,5 +18,12 @@ mean_number = 0
 
 numbers = [round(i/10) * 10 for i in numbers]
 
+min_num = min(numbers)
+max_num = max(numbers)
+numbers.remove(min_num)
+numbers.remove(max_num)
+
 print(numbers)
+
+
 
