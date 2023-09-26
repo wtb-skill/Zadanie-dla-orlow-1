@@ -14,7 +14,6 @@
 # 3. policz średnią z ostatecznie zmodyfikowanej listy `numbers` i przypisz ją do zmiennej `mean_number`
 
 numbers = [5, 32, 56, 2, 2, 16, 7, 10, 23, 100]
-mean_number = 0
 
 numbers = [round(i/10) * 10 for i in numbers]
 
@@ -23,7 +22,9 @@ max_num = max(numbers)
 numbers.remove(min_num)
 numbers.remove(max_num)
 
-print(numbers)
+mean_number = sum(numbers)/len(numbers)
+
+print(mean_number)
 
 
 
