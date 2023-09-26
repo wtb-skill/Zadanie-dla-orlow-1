@@ -28,6 +28,7 @@ def build_bridge(goal, chunk):
     else:
         return False
 
+
 test = [(20, 2), (18, 2), (15, 3), (100, 10)]
 
 for pair in test:
